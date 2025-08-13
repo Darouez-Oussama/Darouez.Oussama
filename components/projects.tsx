@@ -11,7 +11,7 @@ export function Projects() {
         "Added error recovery with failsafe modes, LED indicators, and button commands for user control and reliability.",
         "Used NVS for persistent configuration, enhancing performance.",
       ],
-      technologies: ["Wi-Fi", "HTTPS", "OTA Firmware Updates", "NVS", "FreeRTOS", "ESP-IDF", "Git"],
+      technologies: ["Wi-Fi", "HTTPS", "OTA Firmware Updates", "NVS", "FreeRTOS", "ESP-IDF", "Git", "UML diagram"],
       image: null,
     },
     {
@@ -24,7 +24,7 @@ export function Projects() {
         "Applied SOLID principles to ensure clean, scalable, and maintainable code.",
         "Used Factory pattern to instantiate platform-specific drivers like ADC, GPIO, PWM, and Serial.",
       ],
-      technologies: ["ESP32", "STM32", "AI", "EMG Sensors", "SOLID Principles", "Factory Pattern"],
+      technologies: ["ESP32", "STM32", "EMG Sensors", "SOLID Principles"],
       image: "/images/projects/bionic-hand.jpg",
     },
     {

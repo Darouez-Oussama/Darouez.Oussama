@@ -22,7 +22,17 @@ export function Skills() {
     },
     {
       title: "Embedded Systems",
-      skills: ["FreeRTOS", "STM32", "ESP32", "Arduino", "PIC", "micro-ROS", "ROS2"],
+      skills: [
+        "FreeRTOS",
+        "STM32",
+        "ESP32",
+        "Arduino",
+        "PIC",
+        "micro-ROS",
+        "ROS2",
+        "Error handling and recovery system",
+        "Reset handler",
+      ],
     },
   ]
 
