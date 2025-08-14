@@ -1,6 +1,4 @@
 "use client"
-
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
 
@@ -17,7 +15,7 @@ export function Certificates() {
   return (
     <section id="certificates" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Certificates & Achievements</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Certificates</h2>
         <div className="bg-black p-8 rounded-lg border border-gray-800">
           <div className="flex justify-between items-start mb-4">
             <h3 className="text-2xl font-semibold text-white">Altium Designer Pro - From Design to Manufacturing</h3>
@@ -61,48 +59,6 @@ export function Certificates() {
               </ul>
             </div>
           </div>
-        </div>
-
-        <div className="mt-8 bg-black p-6 rounded-lg border border-gray-800">
-          <h3 className="text-xl font-semibold text-white mb-4">Other Achievements</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src="/images/achievements/robocup-korea.jpg"
-                alt="RoboCup Asia Pacific 2023 in South Korea"
-                width={400}
-                height={250}
-                className="w-full h-48 object-cover"
-              />
-              <p className="text-center text-sm text-gray-400 mt-2">RoboCup Asia Pacific 2023 - South Korea</p>
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <Image
-                src="/images/achievements/china-forum.jpg"
-                alt="Chinese-Arab Youth Development Forum in China"
-                width={400}
-                height={250}
-                className="w-full h-48 object-cover"
-              />
-              <p className="text-center text-sm text-gray-400 mt-2">Chinese-Arab Youth Development Forum - China</p>
-            </div>
-          </div>
-
-          <ul className="space-y-3 text-gray-300">
-            <li className="flex items-start">
-              <span className="text-white mr-2">•</span>
-              <span>Mentor at Robocup Asia Pacific 2024 in South Korea</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-white mr-2">•</span>
-              <span>Attended Chinese-Arab Youth Development Forum in China (Nov 2024)</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-white mr-2">•</span>
-              <span>Robotics Instructor at Discovery Club Junior (2023-2025)</span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>

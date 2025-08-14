@@ -11,7 +11,7 @@ export function Projects() {
         "Added error recovery with failsafe modes, LED indicators, and button commands for user control and reliability.",
         "Used NVS for persistent configuration, enhancing performance.",
       ],
-      technologies: ["Wi-Fi", "HTTPS", "OTA Firmware Updates", "NVS", "FreeRTOS", "ESP-IDF", "Git", "UML diagram"],
+      technologies: ["Wi-Fi", "HTTPS", "OTA Firmware Updates", "NVS", "FreeRTOS", "ESP-IDF", "Git"],
       image: null,
     },
     {
@@ -24,7 +24,7 @@ export function Projects() {
         "Applied SOLID principles to ensure clean, scalable, and maintainable code.",
         "Used Factory pattern to instantiate platform-specific drivers like ADC, GPIO, PWM, and Serial.",
       ],
-      technologies: ["ESP32", "STM32", "EMG Sensors", "SOLID Principles"],
+      technologies: ["ESP32", "STM32", "EMG Sensors", "SOLID Principles", "UML diagram"],
       image: "/images/projects/bionic-hand.jpg",
     },
     {
@@ -81,9 +81,9 @@ export function Projects() {
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+            <div key={index} className="bg-gray-900 p-4 sm:p-6 rounded-lg border border-gray-800">
               {project.image && (
                 <div className="mb-4 rounded-lg overflow-hidden">
                   <Image
@@ -96,9 +96,9 @@ export function Projects() {
                 </div>
               )}
               <div className="mb-4">
-                <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-sm text-gray-400">
-                  <span>{project.type}</span>
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2 leading-tight">{project.title}</h3>
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between text-sm text-gray-400">
+                  <span className="font-medium">{project.type}</span>
                   <span>{project.period}</span>
                 </div>
               </div>
@@ -111,7 +111,10 @@ export function Projects() {
               </ul>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs">
+                  <span
+                    key={techIndex}
+                    className="bg-gray-800 text-gray-300 px-2 py-1 rounded text-xs whitespace-nowrap"
+                  >
                     {tech}
                   </span>
                 ))}
